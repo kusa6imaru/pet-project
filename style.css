@@ -112,10 +112,11 @@ header {
 .services-page {
     margin: 100px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 50px;
     grid-auto-rows: minmax(0, auto);
     text-align: center;
+    justify-content: center;
 }
 
 .headline {
@@ -123,9 +124,13 @@ header {
     grid-column-end: 4;
 }
 
-.services {
-    border: 1px solid;
+.headline-title {
+    font-size: 40px;
 }
+
+/* .services {
+    border: 1px solid;
+} */
 
 .security-img {
     width: 50px;
@@ -133,6 +138,11 @@ header {
 }
 
 .design-img {
+    width: 50px;
+    pointer-events: none;
+}
+
+.commerce-img {
     width: 50px;
     pointer-events: none;
 }
