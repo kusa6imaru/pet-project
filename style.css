@@ -13,8 +13,16 @@
     user-select: none;
 }
 
+h2 {
+    margin: 0 0 15px 0;
+}
+
 .font-family {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-gray {
+    color:rgb(63, 63, 63);
 }
 
 header {
@@ -51,19 +59,16 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     padding: 0 0 2px 0;
-    /* border: 1px solid; */
 }
 
 .header-menu-button-icon {
     width: 30px;
     height: 30px;
-    pointer-events: none; /* prevents img dragging */
-    /* border: 1px solid; */
+    pointer-events: none;
 }
 
 .welcome-page {
     height: 900px;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,11 +76,12 @@ header {
     background-color: rgb(32, 32, 32);
     background-repeat: no-repeat;
     background-image: url(background\ img.png);
-    background-size: 100%;
+    background-size:cover;
 }
 
 .heading1 {
     font-style: italic; 
+    font-weight: 500;
     font-size: 200%; 
     color: azure;
 }
@@ -112,7 +118,7 @@ header {
 .services-page {
     margin: 100px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 250px);
     grid-gap: 50px;
     grid-auto-rows: minmax(0, auto);
     text-align: center;
@@ -128,21 +134,26 @@ header {
     font-size: 40px;
 }
 
-/* .services {
-    border: 1px solid;
-} */
+.headline-paragraph {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.services {
+    line-height: 150%;
+}
 
 .security-img {
-    width: 50px;
+    width: 150px;
     pointer-events: none;
 }
 
 .design-img {
-    width: 50px;
+    width: 150px;
     pointer-events: none;
 }
 
 .commerce-img {
-    width: 50px;
+    width: 150px;
     pointer-events: none;
 }
