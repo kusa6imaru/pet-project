@@ -125,7 +125,6 @@ header {
     grid-auto-rows: minmax(0, auto);
     text-align: center;
     justify-content: center;
-    border: 1px solid;
 }
 
 .headline {
@@ -133,14 +132,16 @@ header {
     grid-column-end: 4;
 }
 
-.headline-title {
+.title {
     font-size: 40px;
     margin: 100px 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.headline-paragraph {
+.paragraph {
     font-style: italic;
     margin-bottom: 20px;
+    color:rgb(126, 126, 126);
 }
 
 .services {
@@ -161,3 +162,4 @@ header {
     width: 150px;
     pointer-events: none;
 }
+
