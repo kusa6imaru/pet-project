@@ -15,6 +15,12 @@
 
 h2 {
     margin: 0 0 15px 0;
+    color: rgb(20, 20, 20);
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(20, 20, 20);
 }
 
 .font-family {
@@ -23,6 +29,7 @@ h2 {
 
 .font-gray {
     color:rgb(126, 126, 126);
+    font-size: larger;
 }
 
 header {
@@ -31,7 +38,7 @@ header {
     justify-content: space-between;
     height: 60px;
     align-items: center;
-    padding: 0 100px 0 100px;
+    padding: 0 200px 0 200px;
     position: sticky;
     top: 0;
 }
@@ -120,7 +127,7 @@ header {
 .services-page {
     padding: 0 0 100px 0;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 400px);
     grid-gap: 50px;
     grid-auto-rows: minmax(0, auto);
     text-align: center;
@@ -135,11 +142,11 @@ header {
 .title {
     font-size: 40px;
     margin: 100px 0 20px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .paragraph {
     font-style: italic;
+    font-size: larger;
     margin-bottom: 20px;
     color:rgb(126, 126, 126);
 }
@@ -163,3 +170,11 @@ header {
     pointer-events: none;
 }
 
+.portfolio-page {
+    background-color: rgb(238, 238, 238);
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
