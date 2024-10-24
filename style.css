@@ -15,12 +15,13 @@
 
 h2 {
     margin: 0 0 15px 0;
-    color: rgb(20, 20, 20);
+    color: rgb(33, 37, 41)
 }
 
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(20, 20, 20);
+    color: rgb(33, 37, 41);
+    margin: 0 0 10px 0;
 }
 
 .font-family {
@@ -124,6 +125,10 @@ header {
     border: 1px solid rgb(199, 158, 9);
 }
 
+.services {
+    line-height: 150%;
+}
+
 .services-page {
     padding: 0 0 100px 0;
     display: grid;
@@ -147,12 +152,8 @@ header {
 .paragraph {
     font-style: italic;
     font-size: larger;
-    margin-bottom: 20px;
+    /* margin: 0 0 20px 0; */
     color:rgb(126, 126, 126);
-}
-
-.services {
-    line-height: 150%;
 }
 
 .security-img {
@@ -170,11 +171,23 @@ header {
     pointer-events: none;
 }
 
+.portfolio {
+    line-height: 150%;
+}
+
 .portfolio-page {
+    padding: 0 0 100px 0;
     background-color: rgb(238, 238, 238);
     display: grid;
     grid-template-columns: repeat(3, 450px);
-    grid-gap: 30px;
+    grid-gap: 40px 30px;
     justify-content: center;
     text-align: center;
+}
+
+.portfolio-img {
+    width: 95%;
+    height: auto;
+    cursor: pointer;
+    margin: 0 0 10px 0;
 }
