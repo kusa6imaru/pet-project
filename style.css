@@ -114,12 +114,13 @@ header {
     border: 1px solid rgb(223, 174, 0);
     background-color: rgb(223, 174, 0);
     color: azure;
-    border-radius: 5px;
-    width: 200px;
-    height: 50px;
+    border-radius: 7px;
+    width: 220px;
+    height: 60px;
     text-align: center;
     align-content: center;
     font-weight: 700;
+    font-size: large;
     transition: background-color 0.1s ease;
 }
 
