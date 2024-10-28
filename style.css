@@ -19,8 +19,9 @@ p {
 }
 
 h2 {
+    font-size: 150%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     color: rgb(33, 37, 41);
 }
 
@@ -87,6 +88,7 @@ header {
     background-color: rgb(32, 32, 32);
     background-repeat: no-repeat;
     background-image: url(background\ img.png);
+    background-position: center;
     background-size: cover;
 }
 
@@ -153,8 +155,8 @@ header {
 }
 
 .title {
-    font-size: 40px;
-    margin: 100px 0 20px 0;
+    font-size: 45px;
+    margin: 100px 0 30px 0;
 }
 
 .services-img {
