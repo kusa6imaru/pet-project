@@ -47,7 +47,7 @@ header {
 }
 
 .home-page-button {
-    color: rgb(255, 200, 1);
+    color: rgb(255, 200, 0);
     cursor: pointer;
 }
 
@@ -204,18 +204,27 @@ header {
 }
 
 .about-page {
+    padding: 0 0 100px 0;
     display: grid;
     grid-auto-rows: minmax(10px, auto);
     grid-auto-columns: minmax(10px, auto);
-    grid-template-columns: 550px 200px 550px;
+    grid-template-columns: 500px 200px 500px;
     justify-content: center;
-    gap: 50px 50px;
+    gap: 70px 50px;
+    background-image: url(line.png);
+    background-size: 45px 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
 }
 
 .about-img {
     border-radius: 100px;
-    width: 150px;
-    height: 150px;
+    border: 7px solid rgb(235, 235, 235);
+    width: 170px;
+    height: 170px;
+    justify-self: center;
+    pointer-events: none;
 }
 
 .about {
@@ -240,14 +249,15 @@ header {
 }
 
 .block-about5 {
-    background-color: rgb(223, 174, 0);
+    background-color: rgb(255, 200, 0);
     color: azure;
     text-align: center;
     align-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: larger;
-    padding: 20px 20px;
+    padding: 20px 30px;
+    line-height: 120%;
 }
 
 .blocks-about p {
