@@ -135,10 +135,6 @@ header {
     line-height: 150%;
 }
 
-.headline p {
-    font-style: italic;
-}
-
 .services-page {
     padding: 0 0 100px 0;
     display: grid;
@@ -152,6 +148,11 @@ header {
 .headline {
     grid-column-start: 1;
     grid-column-end: 4;
+    text-align: center;
+}
+
+.headline p {
+    font-style: italic;
 }
 
 .title {
@@ -195,12 +196,6 @@ header {
     height: auto;
     cursor: pointer;
     margin: 0 0 10px 0;
-}
-
-.about.headline {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
 }
 
 .about-page {
