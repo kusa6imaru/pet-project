@@ -69,6 +69,13 @@ header {
     .portfolio-img {
         width: 100%;
     }
+
+    .about-page {
+        grid-template-columns: 500px 200px 500px;
+        gap: 70px 50px;
+        background-size: 45px 1200px;
+        background-position-y: center;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -88,6 +95,13 @@ header {
     .portfolio-page {
         grid-template-columns: repeat(3, 350px);
         grid-gap: 30px 20px;
+    }
+
+    .about-page {
+        grid-template-columns: 400px 200px 400px;
+        gap: 70px 30px;
+        background-size: 45px 1250px;
+        background-position-y: 20px;
     }
 }
 
@@ -238,14 +252,10 @@ header {
     display: grid;
     grid-auto-rows: minmax(10px, auto);
     grid-auto-columns: minmax(10px, auto);
-    grid-template-columns: 500px 200px 500px;
     justify-content: center;
-    gap: 70px 50px;
     background-image: url(line.png);
-    background-size: 45px 1200px;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: center;
 }
 
 .about-img {
