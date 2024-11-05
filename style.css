@@ -38,10 +38,10 @@ h3 {
 header {
     background-color: rgb(33, 36, 41);
     display: flex;
-    justify-content: space-between;
     height: 60px;
     align-items: center;
-    padding: 0 200px 0 200px;
+    justify-content: center;
+
     position: sticky;
     top: 0;
 }
@@ -49,6 +49,28 @@ header {
 .home-page-button {
     color: rgb(255, 200, 0);
     cursor: pointer;
+}
+
+@media (min-width: 1367px) {
+    .home-page-button {
+        margin: 0 1000px 0 0;
+    }
+
+    .services-page {
+        grid-template-columns: repeat(3, 400px);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .home-page-button {
+        margin: 0 800px 0 0;
+    }
+
+    .services-page {
+        grid-template-columns: repeat(3, 350px);
+        gap: 40px;
+    }
 }
 
 .home-page-button-image {
@@ -138,8 +160,6 @@ header {
 .services-page {
     padding: 0 0 100px 0;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-gap: 50px;
     grid-auto-rows: minmax(0, auto);
     text-align: center;
     justify-content: center;
