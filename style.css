@@ -63,11 +63,11 @@ header {
 
     .portfolio-page {
         grid-template-columns: repeat(3, 420px);
-        grid-gap: 40px 0px;
+        grid-gap: 40px 20px;
     }
 
     .portfolio-img {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -78,16 +78,16 @@ header {
 
     .services-page {
         grid-template-columns: repeat(3, 350px);
-        gap: 40px;
+        gap: 30px;
     }
 
     .portfolio-img {
-        width: 95%;
+        width: 100%;
     }
 
     .portfolio-page {
         grid-template-columns: repeat(3, 350px);
-        grid-gap: 30px 0px;
+        grid-gap: 30px 20px;
     }
 }
 
