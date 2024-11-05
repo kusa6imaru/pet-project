@@ -76,6 +76,11 @@ header {
         background-size: 45px 1200px;
         background-position-y: center;
     }
+
+    .team-page {
+        grid-template-columns: repeat(3, 400px);
+        gap: 70px 20px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -102,6 +107,11 @@ header {
         gap: 70px 30px;
         background-size: 45px 1250px;
         background-position-y: 20px;
+    }
+    
+    .team-page {
+        grid-template-columns: repeat(3, 350px);
+        gap: 70px 10px;
     }
 }
 
@@ -313,11 +323,9 @@ header {
 .team-page {
     padding: 0 0 100px 0;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 70px 20px;
 }
 
 .teammate-img {
