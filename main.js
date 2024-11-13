@@ -23,12 +23,29 @@ function buttonToServices() {
 
 function checkHeaderMenu() {
     const scrollPositionY = window.scrollY;
-    
-    if (scrollPositionY >= 900) {
-        document.getElementById('header-menu-services').style = "color: rgb(255, 200, 0)";
+    const headerMenuServices = document.getElementById('header-menu-services');
+
+    headerMenuServices.addEventListener('mouseover', () => {
+        headerMenuServices.style.color = 'rgb(255, 200, 0)';
+    })
+
+    if (scrollPositionY < 900 || scrollPositionY > 1368) {
+        headerMenuServices.style = 'color: rgb(255, 255, 255)';
     } else {
-        document.getElementById('header-menu-services').style = "color: rgb(255, 255, 255)";
+        headerMenuServices.style = 'color: rgb(255, 200, 0)';
     }
+}
+
+function navigationHeaderMenu() {
+    const headerMenuServices = document.getElementById('header-menu-services');
+    const servicesPage = document.getElementById('services-page');
+
+    headerMenuServices.addEventListener('click', () => {
+        servicesPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
 }
 
 window.addEventListener('scroll', headerOpacity);
@@ -38,3 +55,5 @@ buttonToServices();
 
 window.addEventListener('scroll', checkHeaderMenu);
 checkHeaderMenu();
+
+navigationHeaderMenu();
