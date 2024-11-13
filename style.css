@@ -53,7 +53,7 @@ header {
 
 @media (min-width: 1367px) {
     .home-page-button {
-        margin: 0 1000px 0 0;
+        margin: 0 720px 0 0;
     }
 
     .services-page {
@@ -106,7 +106,7 @@ header {
 
 @media (max-width: 1366px) {
     .home-page-button {
-        margin: 0 850px 0 0;
+        margin: 0 510px 0 0;
     }
 
     .services-page {
@@ -160,7 +160,7 @@ header {
 
 @media (max-width: 1200px) {
     .home-page-button {
-        margin: 0 710px 0 0;
+        margin: 0 360px 0 0;
     }
 
     .services-page {
@@ -214,7 +214,7 @@ header {
 
 @media (max-width: 1050px) {
     .home-page-button {
-        margin: 0 630px 0 0;
+        margin: 0 270px 0 0;
     }
 
     .services-page {
@@ -251,9 +251,27 @@ header {
     width: 130px;
     height: 55px;
     pointer-events: none;
+    margin: 0 0 0 10px;
 }
 
-.header-menu-button {
+.header-menu {
+    display: flex;
+}
+
+.header-menu p {
+    padding: 10px 10px;
+    margin: 0 5px 2px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.header-menu p:hover {
+    color: rgb(255, 200, 0)
+}
+
+/* .header-menu-button {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -267,7 +285,7 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     padding: 0 0 2px 0;
-}
+} */
 
 .header-menu-button-icon {
     width: 30px;
