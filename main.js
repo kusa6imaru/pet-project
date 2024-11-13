@@ -9,6 +9,19 @@ function headerOpacity() {
     }
 }
 
-window.addEventListener('scroll', headerOpacity);
+function buttonToServices() {
+    const welcomePageButton = document.getElementById('welcome-page-button');
+    const servicesPage = document.getElementById('services-page');
 
+    welcomePageButton.addEventListener('click', function() {
+        servicesPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
+window.addEventListener('scroll', headerOpacity);
 headerOpacity();
+
+buttonToServices();
