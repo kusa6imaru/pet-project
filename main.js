@@ -13,15 +13,28 @@ function buttonToServices() {
     const welcomePageButton = document.getElementById('welcome-page-button');
     const servicesPage = document.getElementById('services-page');
 
-    welcomePageButton.addEventListener('click', function() {
+    welcomePageButton.addEventListener('click', () => {
         servicesPage.scrollIntoView({
             behavior: 'smooth',
-            block: 'start'
+            block: 'start',
         })
     })
+}
+
+function checkHeaderMenu() {
+    const scrollPositionY = window.scrollY;
+    
+    if (scrollPositionY >= 900) {
+        document.getElementById('header-menu-services').style = "color: rgb(255, 200, 0)";
+    } else {
+        document.getElementById('header-menu-services').style = "color: rgb(255, 255, 255)";
+    }
 }
 
 window.addEventListener('scroll', headerOpacity);
 headerOpacity();
 
 buttonToServices();
+
+window.addEventListener('scroll', checkHeaderMenu);
+checkHeaderMenu();
