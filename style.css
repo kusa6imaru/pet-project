@@ -42,7 +42,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute;
+    position: fixed; /* absolute */
     top: 0;
 }
 
@@ -66,10 +66,6 @@ header {
         grid-gap: 40px 20px;
     }
 
-    .portfolio-img {
-        width: 100%;
-    }
-
     .about-page {
         grid-template-columns: 500px 200px 500px;
         gap: 70px 50px;
@@ -77,24 +73,45 @@ header {
         background-position-y: center;
     }
 
+    .about-img {
+        width: 170px;
+        height: 170px;
+    }
+
     .team-page {
         grid-template-columns: repeat(3, 400px);
         gap: 70px 20px;
+    }
+
+    .teammate-img {
+        width: 210px;
+    }
+
+    .link {
+        width: 40px;
+        height: 40px;
+        padding-top: 6px;
+    }
+
+    form {
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 55px 55px 55px;
+        gap: 20px;
+    }
+
+    .copyright {
+        margin: 0 820px 0 0;
     }
 }
 
 @media (max-width: 1366px) {
     .home-page-button {
-        margin: 0 800px 0 0;
+        margin: 0 850px 0 0;
     }
 
     .services-page {
         grid-template-columns: repeat(3, 350px);
         gap: 30px;
-    }
-
-    .portfolio-img {
-        width: 100%;
     }
 
     .portfolio-page {
@@ -108,10 +125,125 @@ header {
         background-size: 45px 1250px;
         background-position-y: 20px;
     }
+
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
     
     .team-page {
         grid-template-columns: repeat(3, 350px);
         gap: 70px 10px;
+    }
+
+    .teammate-img {
+        width: 180px;
+    }
+
+    .link {
+        width: 35px;
+        height: 35px;
+        padding-top: 4px;
+        font-size: small;
+    }
+
+    form {
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 55px 55px 55px;
+        gap: 20px;
+    }
+
+    .copyright {
+        margin: 0 620px 0 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-page-button {
+        margin: 0 710px 0 0;
+    }
+
+    .services-page {
+        grid-template-columns: repeat(3, 300px);
+        gap: 20px;
+    }
+
+    .portfolio-page {
+        grid-template-columns: repeat(3, 300px);
+        grid-gap: 30px 20px;
+    }
+
+    .about-page {
+        grid-template-columns: 300px 200px 300px;
+        gap: 70px 30px;
+        background-size: 45px 1550px;
+        background-position-y: 20px;
+    }
+
+    .about-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .team-page {
+        grid-template-columns: repeat(3, 300px);
+        gap: 70px 10px;
+    }
+
+    .teammate-img {
+        width: 160px;
+    }
+
+    .link {
+        width: 30px;
+        height: 30px;
+        padding-top: 2px;
+        font-size: small;
+    }
+
+    form {
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 55px 55px 55px;
+        gap: 20px;
+    }
+
+    .copyright {
+        margin: 0 520px 0 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .home-page-button {
+        margin: 0 630px 0 0;
+    }
+
+    .services-page {
+        grid-template-columns: repeat(3, 270px);
+        gap: 20px;
+    }
+
+    .portfolio-page {
+        grid-template-columns: repeat(3, 270px);
+        grid-gap: 30px 20px;
+    }
+
+    .team-page {
+        grid-template-columns: repeat(3, 270px);
+        gap: 70px 30px;
+    }
+
+    .teammate-img {
+        width: 150px;
+    }
+
+    form {
+        grid-template-columns: 410px 410px;
+        grid-template-rows: 55px 55px 55px;
+        gap: 20px;
+    }
+
+    .copyright {
+        margin: 0 440px 0 0;
     }
 }
 
@@ -200,7 +332,7 @@ header {
 }
 
 .services-page {
-    padding: 100px 0 50px 0;
+    padding: 50px 0 50px 0;
     display: grid;
     grid-auto-rows: minmax(0, auto);
     text-align: center;
@@ -255,6 +387,7 @@ header {
     height: auto;
     cursor: pointer;
     margin: 0 0 10px 0;
+    width: 100%;
 }
 
 .about-page {
@@ -272,8 +405,6 @@ header {
 .about-img {
     border-radius: 100px;
     border: 7px solid rgb(235, 235, 235);
-    width: 170px;
-    height: 170px;
     justify-self: center;
     pointer-events: none;
 }
@@ -330,7 +461,6 @@ header {
 }
 
 .teammate-img {
-    width: 210px;
     border: 7px solid rgb(235, 235, 235);
     border-radius: 100px;
     pointer-events: none;
@@ -361,11 +491,8 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     margin: 0 10px 0 10px;
-    width: 40px;
-    height: 40px;
     border-radius: 20px;
     background-color: rgb(66, 66, 66);
-    padding-top: 6px;
     color: azure;
     text-align: center;
     cursor: pointer;
@@ -377,10 +504,11 @@ header {
 }
 
 .contact-page {
-    padding: 5px 0 50px 0;
+    padding: 5px 0 80px 0;
     margin-top: 40px;
     line-height: 150%;
     background-image: url(map-image.png);
+    background-size: 1200px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(33, 36, 41);
@@ -396,9 +524,6 @@ header {
 
 form {
     display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 55px 55px 55px;
-    gap: 20px;
     justify-content: center;
 }
 
@@ -446,13 +571,17 @@ footer {
 
 .copyright {
     color: rgb(26, 26, 26);
-    margin: 0 850px 0 0;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
 }
 
 footer p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    margin-right: 30px;
     cursor: pointer;
 }
 
