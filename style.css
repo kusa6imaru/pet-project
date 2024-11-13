@@ -37,6 +37,7 @@ h3 {
 
 header {
     background-color: rgb(33, 36, 41); 
+    transition: background-color 0.2s ease;
     display: flex;
     height: 60px;
     align-items: center;
