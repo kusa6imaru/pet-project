@@ -534,7 +534,7 @@ header {
     transition: background-color 0.05s ease;
 }
 
-.contact-page {
+#contact-page {
     padding: 5px 0 80px 0;
     margin-top: 40px;
     line-height: 150%;
@@ -545,7 +545,7 @@ header {
     background-color: rgb(33, 36, 41);
 }
 
-.contact-page h2{
+#contact-page h2{
     color: white;
 }
 

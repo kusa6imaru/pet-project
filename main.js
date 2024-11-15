@@ -6,6 +6,8 @@ const headerMenuAbout = document.getElementById('header-menu-about');
 const aboutPage = document.getElementById('about-page');
 const headerMenuTeam = document.getElementById('header-menu-team');
 const teamPage = document.getElementById('team-page');
+const headerMenuContact = document.getElementById('header-menu-contact');
+const contactPage = document.getElementById('contact-page');
 
 function headerOpacity() {
     const scrollPositionY = window.scrollY;
@@ -60,12 +62,17 @@ function checkHeaderMenu() {
         headerMenuAbout.style = '';
     }
 
-    if (scrollPositionY >= 4350) {
+    if (scrollPositionY >= 4350 && scrollPositionY < 4947) {
         headerMenuTeam.style = 'color: rgb(255, 200, 0)';
     } else {
         headerMenuTeam.style = '';
     }
 
+    if (scrollPositionY >= 4947) {
+        headerMenuContact.style = 'color: rgb(255, 200, 0)';
+    } else {
+        headerMenuContact.style = '';
+    }
     console.log(window.scrollY);
 }
 
@@ -95,6 +102,13 @@ function navigationHeaderMenu() {
         teamPage.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
+        })
+    })
+
+    headerMenuContact.addEventListener('click', () => {
+        contactPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
         })
     })
 }
