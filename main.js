@@ -1,3 +1,10 @@
+const headerMenuServices = document.getElementById('header-menu-services');
+const servicesPage = document.getElementById('services-page');
+const headerMenuPortfolio = document.getElementById('header-menu-portfolio');
+const portfolioPage = document.getElementById('portfolio-page');
+const headerMenuAbout = document.getElementById('header-menu-about');
+const aboutPage = document.getElementById('about-page');
+
 function headerOpacity() {
     const scrollPositionY = window.scrollY;
     const header = document.querySelector('header');
@@ -11,10 +18,10 @@ function headerOpacity() {
 
 function reloadPageButton() {
     document.getElementById('home-page-button').onclick = () => {
-        location.reload();
         window.scrollTo({
-            top: 0
-        })
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 }
 
@@ -32,21 +39,43 @@ function buttonToServices() {
 
 function checkHeaderMenu() {
     const scrollPositionY = window.scrollY;
-    const headerMenuServices = document.getElementById('header-menu-services');
 
-    if (scrollPositionY >= 900 && scrollPositionY <= 1368) {
+    if (scrollPositionY >= 900 && scrollPositionY < 1500) {
         headerMenuServices.style = 'color: rgb(255, 200, 0)';
     } else {
-        headerMenuServices.style = 'color rgb(0, 0, 0)';
+        headerMenuServices.style = '';
+    }
+
+    if (scrollPositionY >= 1500 && scrollPositionY < 2651) {
+        headerMenuPortfolio.style = 'color: rgb(255, 200, 0)';
+    } else {
+        headerMenuPortfolio.style = '';
+    }
+
+    if (scrollPositionY >= 2651 && scrollPositionY < 3000) {
+        headerMenuAbout.style = 'color: rgb(255, 200, 0)';
+    } else {
+        headerMenuAbout.style = '';
     }
 }
 
 function navigationHeaderMenu() {
-    const headerMenuServices = document.getElementById('header-menu-services');
-    const servicesPage = document.getElementById('services-page');
-
     headerMenuServices.addEventListener('click', () => {
         servicesPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    });
+
+    headerMenuPortfolio.addEventListener('click', () => {
+        portfolioPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+
+    headerMenuAbout.addEventListener('click', () => {
+        aboutPage.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         })

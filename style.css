@@ -67,7 +67,7 @@ header {
         grid-gap: 40px 20px;
     }
 
-    .about-page {
+    #about-page {
         grid-template-columns: 500px 200px 500px;
         gap: 70px 50px;
         background-size: 45px 1200px;
@@ -120,7 +120,7 @@ header {
         grid-gap: 30px 20px;
     }
 
-    .about-page {
+    #about-page {
         grid-template-columns: 400px 200px 400px;
         gap: 70px 30px;
         background-size: 45px 1250px;
@@ -174,7 +174,7 @@ header {
         grid-gap: 30px 20px;
     }
 
-    .about-page {
+    #about-page {
         grid-template-columns: 300px 200px 300px;
         gap: 70px 30px;
         background-size: 45px 1550px;
@@ -337,7 +337,7 @@ header {
     margin: 10px 0 70px 0;
 }
 
-#welcome-page-button {
+#welcome-page-button, #send-button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     border: 1px solid rgb(223, 174, 0);
@@ -421,7 +421,7 @@ header {
     width: 100%;
 }
 
-.about-page {
+#about-page {
     padding: 50px 0 50px 0;
     display: grid;
     grid-auto-rows: minmax(10px, auto);
