@@ -38,8 +38,8 @@ h3 {
 header {
     background-color: rgb(33, 36, 41); 
     transition: background-color 0.2s ease;
+    transition: height 0.2s ease;
     display: flex;
-    height: 60px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -50,6 +50,8 @@ header {
 #home-page-button {
     color: rgb(255, 200, 0);
     cursor: pointer;
+    width: 145px;
+    height: auto;
 }
 
 @media (min-width: 1367px) {
@@ -272,9 +274,9 @@ header {
     }
 }
 
-.home-page-button-image {
+#home-page-button-image {
     width: 130px;
-    height: 55px;
+    height: auto;
     pointer-events: none;
     margin: 0 0 0 10px;
 }

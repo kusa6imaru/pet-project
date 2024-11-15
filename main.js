@@ -12,11 +12,17 @@ const contactPage = document.getElementById('contact-page');
 function headerOpacity() {
     const scrollPositionY = window.scrollY;
     const header = document.querySelector('header');
+    const homePageButton = document.getElementById('home-page-button');
+    const homePageButtonImage = document.getElementById('home-page-button-image');
 
     if (scrollPositionY === 0) {
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+        header.style = 'background-color: rgba(0, 0, 0, 0); height: 80px';
+        homePageButton.style = 'width: 180px; transition: width 0.2s ease';
+        homePageButtonImage.style = 'width: 170px; transition: width 0.2s ease';
     } else {
-        header.style.backgroundColor = 'rgb(33, 36, 41)';
+        header.style = 'background-color: rgb(33, 36, 41); height: 60px';
+        homePageButton.style = 'transition: width 0.2s ease';
+        homePageButtonImage.style = 'width: 140px; transition: width 0.2s ease'
     }
 }
 
