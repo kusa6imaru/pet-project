@@ -45,35 +45,34 @@ function checkHeaderMenu() {
     const scrollPositionY = window.scrollY;
 
     if (scrollPositionY >= 900 && scrollPositionY < 1500) {
-        headerMenuServices.style = 'color: rgb(255, 200, 0)';
+        headerMenuServices.style = 'color: rgb(255, 200, 0); transition: color 0.3s ease';
     } else {
-        headerMenuServices.style = '';
+        headerMenuServices.style = 'transition: color 0.3s ease';
     }
 
     if (scrollPositionY >= 1500 && scrollPositionY < 2651) {
-        headerMenuPortfolio.style = 'color: rgb(255, 200, 0)';
+        headerMenuPortfolio.style = 'color: rgb(255, 200, 0); transition: color 0.3s ease';
     } else {
-        headerMenuPortfolio.style = '';
+        headerMenuPortfolio.style = 'transition: color 0.3s ease';
     }
 
     if (scrollPositionY >= 2651 && scrollPositionY < 4350) {
-        headerMenuAbout.style = 'color: rgb(255, 200, 0)';
+        headerMenuAbout.style = 'color: rgb(255, 200, 0); transition: color 0.3s ease';
     } else {
-        headerMenuAbout.style = '';
+        headerMenuAbout.style = 'transition: color 0.3s ease';
     }
 
     if (scrollPositionY >= 4350 && scrollPositionY < 4947) {
-        headerMenuTeam.style = 'color: rgb(255, 200, 0)';
+        headerMenuTeam.style = 'color: rgb(255, 200, 0); transition: color 0.3s ease';
     } else {
-        headerMenuTeam.style = '';
+        headerMenuTeam.style = 'transition: color 0.3s ease';
     }
 
     if (scrollPositionY >= 4947) {
-        headerMenuContact.style = 'color: rgb(255, 200, 0)';
+        headerMenuContact.style = 'color: rgb(255, 200, 0); transition: color 0.3s ease';
     } else {
-        headerMenuContact.style = '';
+        headerMenuContact.style = 'transition: color 0.3s ease';
     }
-    console.log(window.scrollY);
 }
 
 function navigationHeaderMenu() {
