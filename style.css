@@ -79,7 +79,7 @@ header {
         height: 170px;
     }
 
-    .team-page {
+    #team-page {
         grid-template-columns: repeat(3, 400px);
         gap: 70px 20px;
     }
@@ -132,7 +132,7 @@ header {
         height: 150px;
     }
     
-    .team-page {
+    #team-page {
         grid-template-columns: repeat(3, 350px);
         gap: 70px 10px;
     }
@@ -186,7 +186,7 @@ header {
         height: 140px;
     }
 
-    .team-page {
+    #team-page {
         grid-template-columns: repeat(3, 300px);
         gap: 70px 10px;
     }
@@ -228,7 +228,7 @@ header {
         grid-gap: 30px 20px;
     }
 
-    .team-page {
+    #team-page {
         grid-template-columns: repeat(3, 270px);
         gap: 70px 30px;
     }
@@ -482,7 +482,7 @@ header {
     line-height: 150%;
 }
 
-.team-page {
+#team-page {
     padding: 50px 0 50px 0;
     display: grid;
     align-items: center;
@@ -507,7 +507,7 @@ header {
     font-size: 120%;
 }
 
-.team-page h3 {
+#team-page h3 {
     padding: 10px 0 0 0;
     font-size: 130%;
 }

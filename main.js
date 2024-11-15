@@ -4,6 +4,8 @@ const headerMenuPortfolio = document.getElementById('header-menu-portfolio');
 const portfolioPage = document.getElementById('portfolio-page');
 const headerMenuAbout = document.getElementById('header-menu-about');
 const aboutPage = document.getElementById('about-page');
+const headerMenuTeam = document.getElementById('header-menu-team');
+const teamPage = document.getElementById('team-page');
 
 function headerOpacity() {
     const scrollPositionY = window.scrollY;
@@ -52,11 +54,19 @@ function checkHeaderMenu() {
         headerMenuPortfolio.style = '';
     }
 
-    if (scrollPositionY >= 2651 && scrollPositionY < 3000) {
+    if (scrollPositionY >= 2651 && scrollPositionY < 4350) {
         headerMenuAbout.style = 'color: rgb(255, 200, 0)';
     } else {
         headerMenuAbout.style = '';
     }
+
+    if (scrollPositionY >= 4350) {
+        headerMenuTeam.style = 'color: rgb(255, 200, 0)';
+    } else {
+        headerMenuTeam.style = '';
+    }
+
+    console.log(window.scrollY);
 }
 
 function navigationHeaderMenu() {
@@ -76,6 +86,13 @@ function navigationHeaderMenu() {
 
     headerMenuAbout.addEventListener('click', () => {
         aboutPage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+
+    headerMenuTeam.addEventListener('click', () => {
+        teamPage.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         })
