@@ -47,13 +47,13 @@ header {
     top: 0;
 }
 
-.home-page-button {
+#home-page-button {
     color: rgb(255, 200, 0);
     cursor: pointer;
 }
 
 @media (min-width: 1367px) {
-    .home-page-button {
+    #home-page-button {
         margin: 0 720px 0 0;
     }
 
@@ -106,7 +106,7 @@ header {
 }
 
 @media (max-width: 1366px) {
-    .home-page-button {
+    #home-page-button {
         margin: 0 510px 0 0;
     }
 
@@ -160,7 +160,7 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .home-page-button {
+    #home-page-button {
         margin: 0 360px 0 0;
     }
 
@@ -214,7 +214,7 @@ header {
 }
 
 @media (max-width: 1050px) {
-    .home-page-button {
+    #home-page-button {
         margin: 0 270px 0 0;
     }
 
@@ -245,6 +245,18 @@ header {
 
     .copyright {
         margin: 0 440px 0 0;
+    }
+}
+
+@media (hover: hover) {
+    #header-menu-services:hover {
+        color: rgb(255, 200, 0);
+    }
+}
+
+@media (hover: none) {
+    #header-menu-services:active {
+        color: rgb(255, 200, 0);
     }
 }
 

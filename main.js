@@ -9,6 +9,15 @@ function headerOpacity() {
     }
 }
 
+function reloadPageButton() {
+    document.getElementById('home-page-button').onclick = () => {
+        location.reload();
+        window.scrollTo({
+            top: 0
+        })
+    }
+}
+
 function buttonToServices() {
     const welcomePageButton = document.getElementById('welcome-page-button');
     const servicesPage = document.getElementById('services-page');
@@ -25,14 +34,10 @@ function checkHeaderMenu() {
     const scrollPositionY = window.scrollY;
     const headerMenuServices = document.getElementById('header-menu-services');
 
-    headerMenuServices.addEventListener('mouseover', () => {
-        headerMenuServices.style.color = 'rgb(255, 200, 0)';
-    })
-
-    if (scrollPositionY < 900 || scrollPositionY > 1368) {
-        headerMenuServices.style = 'color: rgb(255, 255, 255)';
-    } else {
+    if (scrollPositionY >= 900 && scrollPositionY <= 1368) {
         headerMenuServices.style = 'color: rgb(255, 200, 0)';
+    } else {
+        headerMenuServices.style = 'color rgb(0, 0, 0)';
     }
 }
 
@@ -50,6 +55,8 @@ function navigationHeaderMenu() {
 
 window.addEventListener('scroll', headerOpacity);
 headerOpacity();
+
+reloadPageButton();
 
 buttonToServices();
 
